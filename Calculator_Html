@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            num1=document.getElementById("first_number").value;
+            num2=document.getElementById("second_number").value;
+            document.getElementById("result").innerHTML=parseInt(num1)+parseInt(num2);
+        }
+        function sub(){
+            num1=document.getElementById("first_number").value;
+            num2=document.getElementById("second_number").value;
+            document.getElementById("result").innerHTML=(num1)-(num2);
+        }
+        function mul(){
+            num1=document.getElementById("first_number").value;
+            num2=document.getElementById("second_number").value;
+            document.getElementById("result").innerHTML=num1*num2;
+        }
+        function Div(){
+            num1=document.getElementById("first_number").value;
+            num2=document.getElementById("second_number").value;
+            document.getElementById("result").innerHTML=num1/num2;
+        }
+    </script>
+</head>
+<body>
+    <p id="first">Enter the first number</p>
+    <input type="text" id="first_number"> <br>
+    <p id="second">Enter the second number</p> 
+    <input type="text" id="second_number"><br>
+    <p id="result"> the result is : </p>
+    
+    
+    <button onclick="add()">Add</button> 
+    <input type="button" onclick="sub()" value="Sub"> 
+    <button onclick="mul()">Mul</button>
+    <button onclick="Div()">Div</button>
+
+
+</body>
+</html>
